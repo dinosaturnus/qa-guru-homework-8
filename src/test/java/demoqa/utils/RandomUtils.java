@@ -89,7 +89,7 @@ public class RandomUtils {
     }
 
     public static String getRandomPicture() {
-        return faker.options().option("cat.png", "dog.png", "bird.jpg");
+        return faker.options().option("cat.gif", "dog.png", "bird.jpg");
     }
 
 }
