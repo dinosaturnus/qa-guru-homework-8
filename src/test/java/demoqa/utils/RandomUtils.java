@@ -88,4 +88,8 @@ public class RandomUtils {
         return new Faker().address().fullAddress();
     }
 
+    public static String getRandomPicture() {
+        return faker.options().option("cat.png", "dog.png", "bird.jpg");
+    }
+
 }

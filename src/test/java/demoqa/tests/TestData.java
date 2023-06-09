@@ -13,8 +13,8 @@ public class TestData {
             birthDay = getRandomDayOfBirthday(),
             subject = getRandomSubject(),
             hobby = getRandomHobby(),
-            picturePath = "images/image.png",
-            pictureName = "image.png",
+            pictureName = getRandomPicture(),
+            picturePath = "images/" + pictureName,
             address = getRandomAddress(),
             state = getRandomState(),
             city = getRandomCity(state);

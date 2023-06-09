@@ -40,6 +40,5 @@ public class RegistrationPracticeFormTest extends TestBase {
                 .verifyResults("Address", address)
                 .verifyResults("State and City", state + " " + city);
 
-
     }
 }
