@@ -73,15 +73,24 @@ public class RandomUtils {
     }
 
     public static String getRandomDayOfBirthday() {
-        return String.valueOf(faker.number().numberBetween(10, 27));
+        int dayOfBirth = faker.number().numberBetween(1, 31);
+
+        if (dayOfBirth < 10) {
+            return "0" + dayOfBirth;
+        }
+
+        else {
+            return String.valueOf(dayOfBirth);
+        }
     }
 
     public static String getRandomMonthOfBirthday() {
         return faker.options().option("January", "February", "March", "April", "May",
                 "June", "July", "August", "September", "October", "November", "December");
     }
+
     public static String getRandomYearOfBirthday() {
-        return String.valueOf(faker.number().numberBetween(1900,2100));
+        return String.valueOf(faker.number().numberBetween(1900, 2100));
     }
 
     public static String getRandomAddress() {
