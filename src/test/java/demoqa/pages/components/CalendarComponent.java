@@ -2,7 +2,6 @@ package demoqa.pages.components;
 
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
-import static demoqa.tests.TestData.birthDay;
 import static java.lang.String.format;
 
 public class CalendarComponent {
@@ -10,7 +9,7 @@ public class CalendarComponent {
         $(".react-datepicker__year-select").$(byText(year)).click();
         $(".react-datepicker__month-select").$(byText(month)).click();
 
-        String dayPickerLocator = format(".react-datepicker__day--0%s", birthDay);
+        String dayPickerLocator = format(".react-datepicker__day--0%s:not(.react-datepicker__day--outside-month)", day);
         $(dayPickerLocator).click();
     }
 }

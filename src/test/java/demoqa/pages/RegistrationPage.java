@@ -18,7 +18,7 @@ public class RegistrationPage {
             userEmailInput = $("#userEmail"),
             genderRadioButton = $("#genterWrapper"),
             phoneNumber = $("#userNumber"),
-            dateOfBirthInput = $("#dateOfBirthInput:not(.react-datepicker__day--outside-month)"),
+            dateOfBirthInput = $("#dateOfBirthInput"),
             subjectsInput = $("#subjectsContainer input"),
             hobbiesInput = $("#hobbiesWrapper"),
             pictureInput = $("#uploadPicture"),

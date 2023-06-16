@@ -39,6 +39,5 @@ public class RegistrationPracticeFormTest extends TestBase {
                 .verifyResults("Picture", pictureName)
                 .verifyResults("Address", address)
                 .verifyResults("State and City", state + " " + city);
-
     }
 }
